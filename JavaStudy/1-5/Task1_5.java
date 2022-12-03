@@ -14,7 +14,7 @@ public class Task1_5 {
 
 
         // ② for文を使って①で作成した配列を出力しなさい。
-        for(String i=0;i<fruits.length;i++){
+        for(int i=0;i<fruits.length;i++){
             System.out.println(fruits[i]);
         }
 
@@ -43,7 +43,7 @@ public class Task1_5 {
         */
 
         for(int i=1; i<=9; i++){
-            for(int j=1; j<-9; j++){
+            for(int j=1; j<9; j++){
                 System.out.println(i+"||"+(i*j)+"|");
             }
             System.out.println();

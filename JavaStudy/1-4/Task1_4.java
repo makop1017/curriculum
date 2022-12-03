@@ -3,8 +3,8 @@
  *
  * ログイン機能をイメージして処理を書いてみましょう！
  * ・アカウント情報としてデータベースに登録されている情報
- * 　名前：alice
- * 　パスワード：alice123
+ *  名前：alice
+ *  パスワード：alice123
  * 本課題では、すべての定数(合計６種類)を使いつつ、if文の使い方に慣れていきましょう！
  * 問① 〜 問⑤まで回答お願いします！
  *
@@ -13,8 +13,8 @@ public class Task1_4 {
 
     // 定数（アカウント情報）
     // ① 登録されている名前（USER_NAME）とパスワード（USER_PASSWORD）を定数で定義してください。
-    private static final String USER_NAME =【"alice"】;
-    private static final String USER_PASSWORD = 【"alice123"】;
+    private static final String USER_NAME = "alice";
+    private static final String USER_PASSWORD = "alice123";
 
     // 定数（メッセージ）
     private static final String CONST_MSG_SUCCESS = "ログイン成功です。";
@@ -28,7 +28,7 @@ public class Task1_4 {
     //   「ここへ記述」部分へ適当な値を記述しましょう。
     //   ※詳しくはJava2章にて紹介します。
 
-    
+    public static void main(String[] args) {
         // 以下の変数「name」「pass」を使用して、②〜⑤の条件を満たす処理を記述してください。
         // nameとpassはログイン画面からの入力値だと想定してみましょう。
 
@@ -39,32 +39,24 @@ public class Task1_4 {
 
         // ② 「name」の値が「USER_NAME」と等しく、「 pass 」の値が「USER_PASSWORD」と等しい場合。
         //      定数を使用して「 ログイン成功です 」と出力してください。
-        if(USER_NAME&&USER_PASSWORD){
-            System.out.plintln(CONST_MSG_SUCCESS);
-            } 
-
-
+        if (name.equals(USER_NAME) && pass.equals(USER_PASSWORD)){
+            System.out.println(CONST_MSG_SUCCESS);
+        
         // ③ 「USER_RNAME」の値のみ等しい場合。
        //     定数を使用して「 パスワードに誤りがあります。 」 と出力してください。
-       if(USER_NAME=true||USER_PASSWORD=false){
-        System.out.println(CONST_MSG_ERROR_PASS);
-        }
-
-
+        } else if (name.equals(USER_NAME)){
+            System.out.println(CONST_MSG_ERROR_PASS);
+        
         // ④ 「USER_PASSWORD」の値のみ等しい場合。
        //定数を使用して「 名前に誤りがあります。 」と出力してください。
-      if(USER_NAME=false||USER_PASSWORD=true){
-        System.out.println(CONST_MSG_ERROR_NAME);
-        }
-
+        } else if (pass.equals(USER_PASSWORD)){
+            System.out.println(CONST_MSG_ERROR_NAME);
 
         // ⑤ 「USER_NAME」も「USER_PASSWORD」の値も間違っていた場合。 
        //定数を使用して「 入力情報に誤りがあります。 」と出力してください。
-       if(USER_NAME&&USER_PASSWORD=false){
-        System.out.plintln(CONST_MSG_ERROR_INPUT);
-       }
-
-
+        } else {
+            System.out.println(CONST_MSG_ERROR_INPUT);
+        }
     }
 
 }

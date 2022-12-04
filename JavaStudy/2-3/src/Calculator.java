@@ -1,9 +1,17 @@
+package study;
 
 public class Calculator {
 
-	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+    protected int plus(int a) {
+        return a + 1;
+    }
 
-	}
+    protected int plus(int a, int b) {
+        return a + b;
+    }
+
+    protected int plus(int a, int b, int c) {
+        return a + b + c;
+    }
 
 }

@@ -16,20 +16,20 @@ public class Check{
         * 問2
         * 以下のfor文を完成させなさい
         */
-        for(int i = 0; i < /5/; i++){
+        for(int i = 0; i < 5; i++){
             System.out.print(data[i] + " ");
         }
         System.out.println();
-        for (int i = 0; i < /date.length/; i++) {
-            for (int j = /5/; j > i; j--) {
+        for (int i = 0; i < date.length; i++) {
+            for (int j = 5; j > i; j--) {
                 /*
                 * 問3
                 * 以下、配列の添字を入れてソートを完成させなさい
                 */
-                if(data[/7/] > data[/1/]){
-                  int box = data[/(1,2,3,5,7)/];
-                  data[/0/] = data[/1/];
-                  data[/i/] = box;
+                if(data[7] > data[1]){
+                  int box = data[(1,2,3,5,7)];
+                  data[0] = data[1];
+                  data[i] = box;
                 }
             }
         }

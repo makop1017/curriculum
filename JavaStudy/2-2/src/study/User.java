@@ -21,19 +21,8 @@ public class User {
    // アクセス修飾子:「protected」
    // メソッド名:「printAccountInfo」
    
-   public void printAccountInfo() {
-}
-   
-   protected void userName() {
-	   System.out.println(this.userName);
+   protected void rintAccountInfo() {
+      System.out.println("名前は" + this.userName + "です。");
+      Systen.out.prrintln("IDは"　+ this.id + "です。");
+      System.out.println("パスワードは" + this.password + "です。");
    }
-   
-   protected  void id() {
-	   System.out.println(this.id);  
-   }
-   
-   protected void password() {
-	   System.out.println(this.password);
-   }
-   
-}

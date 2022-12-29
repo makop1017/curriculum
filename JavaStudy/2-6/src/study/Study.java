@@ -40,6 +40,9 @@ public class Study {
         // - また、うるう年の場合は設定内容が正しくとも日付がズレて表示される可能性があります。
         calendar.add(Calendar.MONTH,14);
         calendar.add(Calendar.DATE,15);
+
+        System.out.println(Calendar.MONTH+14);
+        System.out.println(Calendar.DATE+15);
         
 
 
@@ -54,6 +57,7 @@ public class Study {
      * 問③で日付がズレる可能性があるため補足として出力
      * @param  year
      */
+
     private static void printLeapYear(final int year) {
         System.out.println(year + "年は、うるう年" + (Year.isLeap(year) ? "です。" : "ではありません。"));
     }

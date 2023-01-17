@@ -21,10 +21,10 @@ public class Study {
 
         // ① 定数を全て使って、String型のListを記述してください。
     	List<String> syohinList = new ArrayList<>();
-        syohinnList.add("バナナ");
-        syohinList.add("牛乳");
-        syohinList.add("豚肉");
-        syohinList.add("コロッケ");
+        syohinnList.add(SHOP_SHOHIN_00);
+        syohinList.add(SHOP_SHOHIN_01);
+        syohinList.add(SHOP_SHOHIN_02);
+        syohinList.add(SHOP_SHOHIN_03;
     	
 
 

@@ -20,11 +20,11 @@ public class Study {
     public static void main(String args[]) {
 
         // ① 定数を全て使って、String型のListを記述してください。
-    	List<String> syohinList = new ArrayList<>();
-        syohinnList.add(SHOP_SHOHIN_00);
-        syohinList.add(SHOP_SHOHIN_01);
-        syohinList.add(SHOP_SHOHIN_02);
-        syohinList.add(SHOP_SHOHIN_03;
+    	List<String> shohinList = new ArrayList<>();
+        shohinList.add(SHOP_SHOHIN_00);
+        shohinList.add(SHOP_SHOHIN_01);
+        shohinList.add(SHOP_SHOHIN_02);
+        shohinList.add(SHOP_SHOHIN_03);
     	
 
 
@@ -43,7 +43,7 @@ public class Study {
 
         // ③ カリキュラムを参考に拡張for文を使って、課題の画像と同じ表示になるよう記述してください。
         // 「shohinList」と「shopMap」が保持する値を上手く利用しましょう。
-        for(String s : syohinList){
+        for(String shohinList : shohinMap.List()){
             System.out.println(syohinList + "は" + syohinMap +　"なり！");
         }
 

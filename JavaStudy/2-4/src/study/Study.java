@@ -25,10 +25,7 @@ public class Study {
         Fruits fruits = new Fruits;
         fruits.FruitsConstants(fruits,count);
 
-        public static void printFruits(String fruits, int count) {
-            System.out.println("食べ物は" + FRUITS_LEMON_04);
-            System.out.println(FRUITS_COUNT_20 + "個です");
-        }
+        public static void printFruits(FRUITS_LEMON_04,FRUITS_COUNT_20) 
 
     }
 }

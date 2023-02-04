@@ -22,10 +22,9 @@ public class Study {
          *     また、課題の画像と同じ表示になるように
          *     printFruitsの引数にはFruitsConstantsに指定されている定数を設定してください。
          */
-        Fruits fruits = new Fruits;
-        fruits.FruitsConstants(fruits,count);
+        fruits.printFruits(fruits,count);
 
-        public static void printFruits(FRUITS_LEMON_04,FRUITS_COUNT_20) 
+        public static void FruitsConstants(FRUITS_LEMON_04,FRUITS_COUNT_20) 
 
     }
 }

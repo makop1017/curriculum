@@ -43,8 +43,8 @@ public class Study {
 
         // ③ カリキュラムを参考に拡張for文を使って、課題の画像と同じ表示になるよう記述してください。
         // 「shohinList」と「shopMap」が保持する値を上手く利用しましょう。
-        for(String shohinList : shohinMap.List()){
-            System.out.println(syohinList + "は" + syohinMap +　"なり！");
+        for(String shohinList : shopMap.List()){
+            System.out.println(Key + "は" + Value +　"なり！");
         }
 
 

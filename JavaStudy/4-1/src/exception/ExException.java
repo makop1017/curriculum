@@ -60,23 +60,18 @@ public class ExException {
                     case CONST_EXCEPTION_TRIGER_NULL:
                     // 問①: 強制的に「NullPointerException」を発生させるメソッドを作成し、呼び出しなさい。
                     // 問①は最下部にもあります。
-                    String nullValue = (String) CONST_EXCEPTION_TRIGER_NULL;
-                    System.out.println(nullValue);
+                    if (!hogeOffice.equals(CONST_MSG_NULLPO)) {
+                        throw new NullPointerException("ヌルポです。");
+                    }
                     // ルール: ここへ作成したメソッドを呼び出す
                     break;
                     case CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS:
                     // 問②: 「throw」を使用せずに「ArrayIndexOutOfBoundsException」を発生させる処理を記述しなさい。
                     // Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
-                    
-                    break;
-                    case CONST_EXCEPTION_TRIGER_CAST:
-                    String castedStrValue = (String) CONST_OBJ_FOR_CLASS_CAST;
-                    System.out.println(castedStrValue);
-                    break;
-                    default:
-                    System.out.println(CONST_MSG_NOT_EXCEPTION_TRIGGER);
-                    break;
-                }
+                    } else {
+                        System.out.println("hogeのオフィスは" + CONST_IMPERIAL_HOTEL + "です。");
+                    }
+
 
             } catch (NullPointerException e) {
                 printException(e);
@@ -101,9 +96,9 @@ public class ExException {
      * ルール1: private static void 任意のメソッド名 throws 上位へ投げるExceptionクラス名 { NullPointerExceptionを発生させる処理 }
      * ルール2: 例外発生時に設定するメッセージは、定義済みの定数から適当なものを指定してください。
      */
-    private static void execute() throws Exception, NullPointerException {
+    private static void execute() throws NullPointerException {
 
-        sc = new Scanner("sc.nextInt");
+        sc = new Scanner("CONST_MSG_NULLPO");
 
         System.out.print("ヌルポです。");
 

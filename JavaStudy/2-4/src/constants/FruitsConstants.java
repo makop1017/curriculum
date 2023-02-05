@@ -1,4 +1,4 @@
-package constants;package constants;
+package constants;
 
 /**
  * フルーツの定数クラス

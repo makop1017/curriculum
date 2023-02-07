@@ -12,17 +12,21 @@ body {
     width: 400px;
     background-color: #141f40;
 }
+.contents {
+    height: 250px;
+    width: 400px;
+}
 .left{
     height: 250px;
     width: 150px;
     background-color: #80bfa8;
 }
 .right {
+    float: right;
     height: 250px;
     width: 250px;
     background-color: #8c2727;
 }
-
 .footer {
     height: 100px;
     width: 400px;

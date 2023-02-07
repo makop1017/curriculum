@@ -18,11 +18,13 @@ body {
         width: 250px;
     }
     .left{
+        float: left;
         height: 250px;
         width: 150px;
         background-color: #80bfa8;
     }
     .right {
+        float: right;
         height: 250px;
         width: 100px;
         background-color: #8c2727;
@@ -43,31 +45,26 @@ body {
     height: 100%;
 }
 .wrapper {
-    height: 500px;
     width: 150px;
     margin: 0 auto;
 }
 .header {
-    height: 100px;
     width: 150px;
     background-color: #141f40;
 }
 .contents {
-    height: 250px;
     width: 150px;
 }
 .left{
-    height: 150px;
     width: 150px;
     background-color: #80bfa8;
 }
 .right {
-    height: 150px;
+    float: bottom;
     width: 150px;
     background-color: #8c2727;
 }
 .footer {
-    height: 100px;
     width: 150px;
     background-color: #d98d30;
 }

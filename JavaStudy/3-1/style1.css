@@ -17,6 +17,7 @@ body {
     width: 400px;
 }
 .left{
+    float: left;
     height: 250px;
     width: 150px;
     background-color: #80bfa8;

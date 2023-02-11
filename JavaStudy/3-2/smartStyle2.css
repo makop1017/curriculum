@@ -1,123 +1,133 @@
 @media  screen and (max-width: 767px) {
-body {
-    min-height: 100%;
-    height: 100%;
+    body {
+        min-height: 100%;
+        height: 100%;
+    }
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .wrapper {
+        height: 450px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .header {
+        height: 100px;
+        width: 300px;
+        background-color: #141f40;
+    }
+    .contents {
+        height: 250px;
+        width: 300px;
+    }
+    .left {
+        float: left;
+        height: 250px;
+        width: 100px;
+        background-color: #80bfa8;
+    }
+    .center {
+        height: 150px;
+        width: 125px;
+    }
+    .center1 {
+        height: 50px;
+        width: 125px;
+        background-color: #dbd400;
+    }
+    .center2 {
+        float:bottom;
+        height: 100px;
+        width: 125px;
+        background-color: #0093b7;
+    }
+    .rightcenter {
+        float: right;
+        height: 100px;
+        width: 200px;
+        background-color: #8c2727;
+    }
+    .right {
+        float: right;
+        height: 150px;
+        width: 75px;
+        background-color: #ff9a6b;
+    }
+    .footer {
+        height: 100px;
+        width: 300px;
+        background-color: #d98d30;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
 }
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.wrapper {
-    width: 767px;
-    margin: 0 auto;
-}
-.header {
-    height: 100px;
-    background-color: #141f40;
-}
-.contents {
-    height: 250px;
-}
-.left-center {
-    float: left;
-    height: 100%;
-}
-.left {
-    float: left;
-    width: 100px;
-    height: 100%;
-    background-color: #80bfa8;
-}
-.left-upper {
-    width: 125px;
-    height: 100px;
-    background-color: #dbd400
-}
-.left-lower {
-    width: 125px;
-    height: 200px;
-    margin-bottom: 100px;
-    margin-left: 200px;
-}
-.center {
-    float: right;
-    width: 125px;
-    height: 100%;
-    background-color: #8c2727;
-}
-.right {
-    float: right;
-    width: 75px;
-    height: 150px;
-    background-color: #ff9a6b;
-}
-.footer {
-    height: 100px;
-    background-color: #d98d30;
-}
-}
+    
 
-
-@media  screen and (max-width: 479px) {
-body {
-    min-height: 100%;
-    height: 100%;
+    @media  screen and (max-width: 767px) {
+    body {
+        min-height: 100%;
+        height: 100%;
+    }
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .wrapper {
+        height: 650px;
+        width: 150px;
+        margin: 0 auto;
+    }
+    .header {
+        height: 100px;
+        width: 150px;
+        background-color: #141f40;
+    }
+    .contents {
+        height: 450px;
+        width: 150px;
+    }
+    .left {
+        height: 100px;
+        width: 150px;
+        background-color: #80bfa8;
+    }
+    .center {
+        height: 150px;
+        width: 150px;
+    }
+    .center1 {
+        height: 50px;
+        width: 150px;
+        background-color: #dbd400;
+    }
+    .center2 {
+        height: 100px;
+        width: 150px;
+        background-color: #0093b7;
+    }
+    .rightcenter {
+        height: 100px;
+        width: 150px;
+        background-color: #8c2727;
+    }
+    .right {
+        height: 100px;
+        width: 150px;
+        background-color: #ff9a6b;
+    }
+    .footer {
+        height: 100px;
+        width: 150px;
+        background-color: #d98d30;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
 }
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.wrapper {
-    width: 479px;
-    margin: 0 auto;
-}
-.header {
-    height: 100px;
-    background-color: #141f40;
-}
-.contents {
-    height: 250px;
-}
-.left-center {
-    float: left;
-    height: 100%;
-}
-.left {
-    float: left;
-    width: 150px;
-    height: 100%;
-    background-color: #80bfa8;
-}
-.left-upper {
-    width: 150px;
-    height: 100px;
-    background-color: #dbd400
-}
-.left-lower {
-    width: 150px;
-    height: 200px;
-    margin-bottom: 100px;
-    margin-left: 250px;
-}
-.center {
-    float: right;
-    width: 150px;
-    height: 100%;
-    background-color: #8c2727;
-}
-.right {
-    float: right;
-    width: 150px;
-    height: 150px;
-    background-color: #ff9a6b;
-}
-.footer {
-    height: 100px;
-    background-color: #d98d30;
-}
-.contents {
-    float: none;
-}
-}
+    

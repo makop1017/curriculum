@@ -27,6 +27,17 @@ body {
     width: 150px;
     background-color: #80bfa8;
 }
+.right {
+    float: right;
+    height: 250px;
+    width: 250px;
+}
+.right-in {
+    float:right;
+    height: 150px;
+    width: 100px;
+    background-color: #ff9a6b;
+}
 .center {
     height: 150px;
     width: 150px;
@@ -42,17 +53,11 @@ body {
     width: 150px;
     background-color: #0093b7;
 }
-.rightcenter {
-    float: right;
+.bottom {
+    float:bottom;
     height: 100px;
     width: 250px;
     background-color: #8c2727;
-}
-.right {
-    float: right;
-    height: 150px;
-    width: 100px;
-    background-color: #ff9a6b;
 }
 .footer {
     height: 100px;

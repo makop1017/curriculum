@@ -25,7 +25,7 @@ public class DBPrepared {
     private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
     /** ・JDMC接続先情報 */
     // 問① データベースのホスト名・データベース名を定数にしなさい。
-    private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost:5432/tb_shohin";
+    private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost:5432/lesson_db";
     /** ・ユーザー名 */
     // 問② データベースのユーザー名を定数にしなさい
     private static final String USER = "postgres";
@@ -43,7 +43,7 @@ public class DBPrepared {
             Class.forName(POSTGRES_DRIVER);
             // 問④ 問①〜③の定数を使ってデータベースと接続しなさい。
             connection = DriverManager.getConnection(
-            "jdbc:postgresql://localhost/tb_shohin", "postgres", "postgres");
+            "jdbc:postgresql://lesson_db/JDBC_CONNECTION", "USER", "PASS");
             statement = connection.createStatement();
 
             String SQL = "SELECT * FROM TB_SHOHIN WHERE SHOHIN_ID = ? OR SHOHIN_ID = ? ";
@@ -53,9 +53,11 @@ public class DBPrepared {
             * 問⑤ SHOHIN_IDが001と020のものを表示できるように
             * PreparedStatementインターフェースを使って値をSQL文にセットしてみましょう。
             */
-            
-            preparedStatement.setString(001,500);
-            preparedStatement.setString(020,800);
+            for (int i = 0; i < 3; i++) {
+            preparedStatement.setInt(001,500);
+            preparedStatement.setInt(020,800);
+            preparedStatement.executeUpdate();
+            }
 
             resultSet = preparedStatement.executeQuery();
 

@@ -28,7 +28,7 @@ public class DBAccess {
     private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
     /** ・JDMC接続先情報 */
     // 問① データベースのホスト名・データベース名を定数にしなさい。
-    private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost:5432/lesson_db";
+    private static final String JDBC_CONNECTION;
     /** ・ユーザー名 */
     // 問② データベースのユーザー名を定数にしなさい。
     private static final String USER = "postgres";

@@ -25,7 +25,7 @@ public class DBPrepared {
     private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
     /** ・JDMC接続先情報 */
     // 問① データベースのホスト名・データベース名を定数にしなさい。
-    private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost:5432/lesson_db";
+    private static final String JDBC_CONNECTION;   
     /** ・ユーザー名 */
     // 問② データベースのユーザー名を定数にしなさい
     private static final String USER = "postgres";
@@ -53,11 +53,8 @@ public class DBPrepared {
             * 問⑤ SHOHIN_IDが001と020のものを表示できるように
             * PreparedStatementインターフェースを使って値をSQL文にセットしてみましょう。
             */
-            for (int i = 0; i < 3; i++) {
-            preparedStatement.setInt(001,500);
-            preparedStatement.setInt(020,800);
-            preparedStatement.executeUpdate();
-            }
+            String SQL = "INSERT INTO SHOHIN_ID(001, 020) VALUES( ?, ?, …) ";
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             resultSet = preparedStatement.executeQuery();
 

@@ -72,7 +72,7 @@
 }
     
 
-    @media  screen and (max-width: 767px) {
+    @media  screen and (max-width: 479px) {
         body {
             min-height: 100%;
             height: 100%;
@@ -83,7 +83,7 @@
             clear: both;
         }
         .wrapper {
-            height: 750px;
+            height: 800px;
             width: 150px;
             margin: 0 auto;
         }
@@ -93,7 +93,7 @@
             background-color: #141f40;
         }
         .contents {
-            height: 550px;
+            height: 600px;
             width: 150px;
         }
         .left {
@@ -102,7 +102,7 @@
             background-color: #80bfa8;
         }
         .right {
-            height: 450px;
+            height: 500px;
             width: 150px;
         }
         .right-in {
@@ -111,11 +111,10 @@
             background-color: #ff9a6b;
         }
         .center {
-            height: 250px;
+            height: 150px;
             width: 150px;
         }
         .center1 {
-            float:top;
             height: 50px;
             width: 150px;
             background-color: #dbd400;
@@ -126,7 +125,6 @@
             background-color: #0093b7;
         }
         .bottom {
-            float:bottom;
             height: 100px;
             width: 150px;
             background-color: #8c2727;

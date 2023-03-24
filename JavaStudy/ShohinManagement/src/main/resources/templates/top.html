@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th ="http:/ww.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP PAGE</title>
-    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="/css/top.css">
 </head>
 <body>
     <div class="wrapper">
@@ -14,10 +14,14 @@
         </div>
         <div class="contents">
             <p style="text-align:center">
-                <button class="rounded-corner1" id="button1" onclick = "location.href='file:///Users/takadamakoto/LetsEngineer/curriculum/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/list/list.html'">商品一覧</button>
+            <a th:href="@{/list}"> 
+            <input class="create-button1" id="button1" value="商品一覧"type="button">
+            </a>
             </p>
             <p style="text-align:center">
-                <button class="rounded-corner2" id="button2" onclick = "location.href='file:///Users/takadamakoto/LetsEngineer/curriculum/%E5%80%8B%E4%BA%BA%E9%96%8B%E7%99%BA/register/register.html'">商品登録</button>
+            <a th:href="@{/register}"> 
+            <input class="create-button2" id="button2" value="商品登録"type="button">
+            </a>
             </p>
         </div>
     </div>

@@ -10,7 +10,7 @@
             clear: both;
         }
         .wrapper {
-            height: 540px;
+            height: 125px;
             width: 1470px;
             margin: 0 auto;
         }
@@ -27,7 +27,12 @@
             border:1px solid #313131;
             border-radius: 10px;
             margin-top: 50px;
-            margin-left: 90px;
+            margin-left: 200px;
+            font-weight: bold;
+        }
+         .thema {
+            font-size     : 30pt;
+            text-decoration:underline;
         }
         .contents {
             text-align:center;
@@ -36,67 +41,43 @@
             color: #777777;
             font-family: "sans-serif";
             font-weight:lighter;
+            border-right:200px solid; 
         }
-        .information1 {
+        .form-group {
             display: inline-block;
             width: 100%;
             line-height: 3;
             justify-content: flex-end;
+            font-size: 30px;
         }
-        .information2 {
-            display: inline-block;
-            width: 100%;
-            line-height: 3;
+        .form-control {
+            margin-top: 10px;
+            margin-left: 30px;
+            text-align :left;
+        }
+        .label1 {
+			margin: -25px;
+		}
+		.label2 {
+			margin: -15px;
+		}
+		.label3 {
+			margin: -2px;
+		}
+		.label4 {
+			margin: 12px;
+		}
+        .textbox{
+            height: 60px;
+            width: 700px;
+            margin-top: 20px;
+        }
+        #textbox{
+            height: 60px;
+            width: 700px;
             justify-content: flex-end;
         }
-        .information3 {
-            display: inline-block;
-            width: 100%;
-            line-height: 3;
-            justify-content: flex-end;
-        }
-        .information4 {
-            display: inline-block;
-            width: 100%;
-            line-height: 3;
-            justify-content: flex-end;
-        }
-        .information5 {
-            display: inline-block;
-            width: 100%;
-            line-height: 3;
-            justify-content: flex-end;
-        }
-        #textbox1{
-            height: 60px;
-            width: 700px;
-            margin-top: 20px;
-        }
-        #textbox2{
-            height: 60px;
-            width: 700px;
-            margin-right: 50px;
-            margin-top: 20px;
-        }
-        #textbox3{
-            height: 60px;
-            width: 700px;
-            margin-right: 25px;
-            margin-top: 20px;
-        }
-        #textbox4{
-            height: 60px;
-            width: 700px;
-            margin-right: 5px;
-            margin-top: 20px;
-        }
-        #textbox5{
-            height: 60px;
-            width: 700px;
-            margin-right: -20px;
-            margin-top: 20px;
-        }
-        .footer1 {
+        .footer {
             margin-top: 150px;
             margin-right: 150px;
         }
@@ -110,6 +91,7 @@
             border-radius: 10px;
             margin-top: 50px;
             margin-left: 90px;
+            font-weight: bold;
         }
         * {
             margin: 0;

@@ -3,7 +3,6 @@
         min-height: 100%;
             height: 100%;
             background-color:#fee8f4;
-            color: #777777;
         }
         .clearfix::after {
             content: '';
@@ -18,8 +17,8 @@
         .header {
             height: 125px;
             width: 1470px;
-        }
-        #button1 {
+         }
+         #button1 {
             width: 130px;
             height: 60px;
             font-size: 30px;
@@ -28,100 +27,38 @@
             border:1px solid #313131;
             border-radius: 10px;
             margin-top: 50px;
-            margin-left: 90px;
+            margin-left: 200px;
+            font-weight: bold;
+         }
+        .container {
+			height: 350px;
+            width: 1050px;
+			display       : inline-block;
+            text-align    : center;
+            background    : #FFFFFF;
+            color         : #777777;
+            margin: 30px 200px;
+            border:2px solid #777777;
         }
-        .center {
-            text-align:center;
-            font-family: "ゴシック体";
-            height: 500px;
-            width: 1470px;
+        .thema {
+            font-size     : 30pt;
+            text-decoration:underline;
         }
-        .center-in {
-            text-align:center;
-            height: 500px;
-            width: 1200px;
-            margin-left: 250px;
+        .table-striped  {
+			height: 50px;
+            width: 1050px;
+  			font-size     : 15pt;
+  			text-align    : center;
+  			padding       : 40px 50px;
+  			color: #777777;
+  			line-height   : 2em;
+  			margin: -30px -50px;
         }
-        #button2 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button3 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button4 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button5 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button6 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button7 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button8 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button9 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button10 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
-        #button11 {
-            width: 60px;
-            font-size:20px;
-            color: #313131;
-            background-color: white;
-            border:1px solid #313131;
-            border-radius: 10px;
-        }
+        table,
+		table th,
+		table td {
+   		 	border: 1px solid black；
+		}
         * {
             margin: 0;
             padding: 0;

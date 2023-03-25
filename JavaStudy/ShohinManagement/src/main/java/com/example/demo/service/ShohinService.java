@@ -26,4 +26,13 @@ public class ShohinService {
 		return shohinRepository.findAll();
 		}
 	
+	/**
+	   * ユーザー情報 物理削除
+	   * @param id ユーザーID
+	   */
+	  public void delete(Integer shohin_code) {
+	    ShohinEntity shohinEntity = findById(shohin_code);
+	    shohinRepository.delete(shohinEntity);
+	    }
+	  
 	}

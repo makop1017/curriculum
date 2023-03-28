@@ -29,7 +29,7 @@ public class EditController {
 	 * @param model Model
 	 * @return 商品編集画面
 	 */
-	@GetMapping("/edit/{shohin_code}")
+	 @GetMapping("/user/{shohin_code}/edit")
 	public String displayEdit(@PathVariable Integer shohin_code,Model model) {
 		EditEntity editEntity = editService.findById(shohin_code);
 		EditForm editForm = new EditForm();
@@ -56,4 +56,11 @@ public class EditController {
 		editService.update(editForm);
 		return String.format("redirect:/edit/%d", editForm.getShohin_code());
 	}
+	 @GetMapping("/delete")
+	  public String delete(@PathVariable Integer shohin_code, Model model) {
+	    // ユーザー情報の削除
+	    editService.delete(shohin_code);
+	    return "redirect:/list";
+	  }
+	
 }

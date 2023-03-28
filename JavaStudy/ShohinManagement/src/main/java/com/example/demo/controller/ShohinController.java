@@ -52,7 +52,7 @@ public class ShohinController {
   @GetMapping("/{shohin_code}/delete")
   public String delete(@PathVariable Long shohin_code, Model model) {
     // ユーザー情報の削除
-    shohinService.delete(shohin_code);
+//    shohinService.delete(shohin_code);
     return "redirect:/list";
   }
 

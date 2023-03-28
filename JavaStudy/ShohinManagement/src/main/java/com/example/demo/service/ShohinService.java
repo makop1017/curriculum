@@ -31,8 +31,8 @@ public class ShohinService {
 	   * @param id ユーザーID
 	   */
 	  public void delete(Integer shohin_code) {
-	    ShohinEntity shohinEntity = findById(shohin_code);
-	    shohinRepository.delete(shohinEntity);
+//	    ShohinEntity shohinEntity = findById(shohin_code);
+//	    shohinRepository.delete(shohinEntity);
 	    }
 	  
 	}

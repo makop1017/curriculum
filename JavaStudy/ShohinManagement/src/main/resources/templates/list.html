@@ -11,7 +11,8 @@
 	<div class="wrapper">
 		<div class="header">
 			<p>
-				<button type="button" onclick="history.back()" class="create-button1" id="button1">戻る</button>
+				<button type="button" onclick="history.back()"
+					class="create-button1" id="button1">戻る</button>
 			</p>
 		</div>
 		<div class="container">
@@ -36,14 +37,16 @@
 						<td th:text="*{shohinlist.color}"></td>
 						<td th:text="${shohinlist.price}"></td>
 						<td>
-							<button
-								type="button" th:href="@{/edit/{shohin_code}(shohin_code=*{shohin_code})}"
-								class="btn btn-secondary" id="button2">編集</button>
+							<form th:action="@{/edit}" method="post">
+								<input type="submit" name="edit" class="btn btn-secondary"
+									id="button2" value="編集">
+							</form>
 						</td>
 						<td>
-							<button
-								 type="button" th:href="@{/delete/{shohin_code}(shohin_code=*{shohin_code})}"
-								class="btn btn-secondary" id="button3">削除</button>
+							<form th:action="@{/delete}" method="post">
+								<input type="submit" name="delete"
+									class="btn btn-secondary" id="button3" value="削除">
+							</form>
 						</td>
 					</tr>
 				</tbody>

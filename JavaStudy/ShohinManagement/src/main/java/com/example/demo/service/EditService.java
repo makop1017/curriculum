@@ -45,7 +45,10 @@ public class EditService {
 	    editRepository.save(editEntity);
 	  }
 	  
-	  
+	  public void delete(Integer shohin_code) {
+		    EditEntity editEntity = findById(shohin_code);
+		    editRepository.delete(editEntity);
+		  }
 	  
 }
 

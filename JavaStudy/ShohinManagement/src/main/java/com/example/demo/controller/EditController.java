@@ -56,7 +56,7 @@ public class EditController {
 		editService.update(editForm);
 		return String.format("redirect:/edit/%d", editForm.getShohin_code());
 	}
-	 @GetMapping("/delete")
+	 @RequestMapping(value = "/delete", method = RequestMethod.POST)
 	  public String delete(@PathVariable Integer shohin_code, Model model) {
 	    // ユーザー情報の削除
 	    editService.delete(shohin_code);

@@ -29,22 +29,34 @@
 					</div>
 			</div>
 			<div class="form-group">
+			<div class="shohin_code">
+				<div class="error" th:errors="*{shohin_code}"></div>
 				<label class="label1">商品コード<span class="text-box"></span></label><input
 					type="text" th:field="*{shohin_code}" id="textbox"
 					class="form-control">
+					</div>
 			</div>
 			<div class="form-group">
+			<div class="category">
+				<div class="error" th:errors="*{category}"></div>
 				<label class="label2">カテゴリ<span class="text-box"></span></label> <input
 					type="text" th:field="*{category}" id="textbox"
 					class="form-control">
+					</div>
 			</div>
 			<div class="form-group">
+			<div class="solor}">
+				<div class="error" th:errors="*{olor}}"></div>
 				<label class="label3">カラー<span class="text-box"></span></label> <input
 					type="text" th:field="*{color}" id="textbox" class="form-control">
+					</div>
 			</div>
 			<div class="form-group">
+			<div class="price">
+				<div class="error" th:errors="*{price}"></div>
 				<label class="label4">値段<span class="text-box"></span></label> <input
 					type="text" th:field="*{price}" id="textbox" class="form-control">
+					</div>
 			</div>
 			<p>
 				<button type="submit" class="create-button2" id="button2">登録</button>

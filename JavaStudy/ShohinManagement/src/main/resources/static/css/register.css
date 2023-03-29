@@ -11,7 +11,7 @@
         }
         .wrapper {
             height: 125px;
-            width: 1470px;
+            width: 1450px;
             margin: 0 auto;
         }
         .header {
@@ -27,7 +27,7 @@
             border:1px solid #313131;
             border-radius: 10px;
             margin-top: 50px;
-            margin-left: 200px;
+            margin-left: 100px;
             font-weight: bold;
         }
          .thema {
@@ -55,8 +55,11 @@
             margin-left: 30px;
             text-align :left;
         }
+        .label{
+			margin-top: -500px;
+		}
         .label1 {
-			margin: -25px;
+			margin: 200px -25px;
 		}
 		.label2 {
 			margin: -15px;
@@ -89,10 +92,15 @@
             background-color: white;
             border:1px solid #313131;
             border-radius: 10px;
-            margin-top: 50px;
-            margin-left: 90px;
+            margin-bottom: 50px;
+            margin-left: 1100px;
             font-weight: bold;
         }
+        .error{
+			font-size: 15px;
+			color:red;
+			margin-left: -380px;
+		}
         * {
             margin: 0;
             padding: 0;

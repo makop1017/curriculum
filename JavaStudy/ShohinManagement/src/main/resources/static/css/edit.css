@@ -33,6 +33,7 @@
         .thema {
             font-size     : 30pt;
             text-decoration:underline;
+            font-weight: 100;
         }
         .contents {
             text-align:center;
@@ -92,6 +93,12 @@
             margin-left: 1100px;
             font-weight: bold;
         }
+        .error{
+			font-size: 15px;
+			color:red;
+			margin-left: -380px;
+			margin-bottom: -20px;
+		}
         * {
             margin: 0;
             padding: 0;

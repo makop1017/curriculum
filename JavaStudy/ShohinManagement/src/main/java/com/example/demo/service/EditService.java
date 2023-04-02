@@ -45,9 +45,14 @@ public class EditService {
 	    editRepository.save(editEntity);
 	  }
 	  
+	  /**
+	   * ユーザー情報 物理削除
+	   * @param id ユーザーID
+	   */
 	  public void delete(Integer shohin_code) {
-		    EditEntity editEntity = findById(shohin_code);
-		    editRepository.delete(editEntity);
+		  editRepository.deleteById(shohin_code);
+//		    EditEntity editEntity = findById(shohin_code);
+//		    editRepository.delete(editEntity);
 		  }
 	  
 }

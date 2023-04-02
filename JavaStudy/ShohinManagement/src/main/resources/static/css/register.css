@@ -11,7 +11,7 @@
         }
         .wrapper {
             height: 125px;
-            width: 1450px;
+            width: 1470px;
             margin: 0 auto;
         }
         .header {
@@ -31,17 +31,18 @@
             font-weight: bold;
         }
          .thema {
-            font-size     : 30pt;
+            font-size     : 35pt;
             text-decoration:underline;
+            text-align:center;
+            font-weight: 100;
+            color: #777777;
+            letter-spacing: 10px;
         }
         .contents {
-            text-align:center;
             height: 340px;
             width: 1470px;
-            color: #777777;
             font-family: "sans-serif";
-            font-weight:lighter;
-            border-right:200px solid; 
+            text-align:center;
         }
         .form-group {
             display: inline-block;
@@ -49,17 +50,15 @@
             line-height: 3;
             justify-content: flex-end;
             font-size: 30px;
+            color: #777777;
         }
         .form-control {
             margin-top: 10px;
             margin-left: 30px;
             text-align :left;
         }
-        .label{
-			margin-top: -500px;
-		}
         .label1 {
-			margin: 200px -25px;
+			margin: -25px;
 		}
 		.label2 {
 			margin: -15px;
@@ -70,7 +69,7 @@
 		.label4 {
 			margin: 12px;
 		}
-        .textbox{
+        .text-box{
             height: 60px;
             width: 700px;
             margin-top: 20px;
@@ -80,10 +79,6 @@
             width: 700px;
             justify-content: flex-end;
         }
-        .footer {
-            margin-top: 150px;
-            margin-right: 150px;
-        }
         #button2 {
             width: 130px;
             height: 60px;
@@ -92,14 +87,15 @@
             background-color: white;
             border:1px solid #313131;
             border-radius: 10px;
-            margin-bottom: 50px;
-            margin-left: 1100px;
+            margin-bottom: -50px;
+            margin-left: 1000px;
             font-weight: bold;
         }
         .error{
 			font-size: 15px;
 			color:red;
 			margin-left: -380px;
+			margin-bottom: -20px;
 		}
         * {
             margin: 0;

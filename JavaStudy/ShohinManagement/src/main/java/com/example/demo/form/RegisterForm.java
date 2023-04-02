@@ -12,14 +12,15 @@ public class RegisterForm {
 	@Size(max = 20, message = "20字以内で入力してください")
 	private String shohin_name;
 
+	@NotNull(message = "商品コードを入力してください")
 	private Integer shohin_code;
 
 	@NotEmpty(message = "カテゴリを入力してください")
-	@Size(max = 20, message = "10字以内で入力してください")
+	@Size(max = 10, message = "10字以内で入力してください")
 	private String category;
 
 	@NotEmpty(message = "カラーを入力してください")
-	@Size(max = 20, message = "10字以内で入力してください")
+	@Size(max = 10, message = "10字以内で入力してください")
 	private String color;
 
 	@NotNull(message = "値段を入力してください")

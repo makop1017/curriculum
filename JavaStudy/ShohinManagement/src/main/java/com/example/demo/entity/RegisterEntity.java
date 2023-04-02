@@ -2,8 +2,6 @@ package com.example.demo.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -20,7 +18,6 @@ public class RegisterEntity {
 	   */
 	  @Id
 	  @Column(name = "shohin_code")
-	  @GeneratedValue(strategy = GenerationType.IDENTITY)
 	  private Integer shohin_code;
 	  /**
 	   * 商品名

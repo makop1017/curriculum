@@ -9,9 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example.demo.form.RegisterForm;
 import com.example.demo.service.RegisterService;
@@ -33,7 +33,7 @@ public class RegisterController {
 	 * @param model Model
 	 * @return 商品情報一覧画面
 	 */
-	@GetMapping(value = "/register")
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public String displayAdd(Model model) {
 		model.addAttribute("registerForm", new RegisterForm());
 		return "/register";
@@ -46,8 +46,8 @@ public class RegisterController {
 	 * @param model Model
 	 * @return 商品情報詳細画面
 	 */
-	@RequestMapping("/list")
-	public String insert(@Validated @ModelAttribute RegisterForm registerForm,BindingResult result, Model model) {
+	@RequestMapping(value="/list",method=RequestMethod.POST)
+	public String create(@Validated @ModelAttribute RegisterForm registerForm,BindingResult result, Model model) {
 		if (result.hasErrors()) {
 			List<String> errorList = new ArrayList<String>();
 			for (ObjectError error : result.getAllErrors()) {

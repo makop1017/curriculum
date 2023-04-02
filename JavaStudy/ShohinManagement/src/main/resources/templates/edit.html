@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th ="http:/ww.thymeleaf.org">
+<html xmlns:th="http:/ww.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,41 +10,46 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-				<p>
-					<button type="button" onclick="history.back()" class="create-button1" id="button1">戻る</button>
-				</p>
-			</div>
-		</div>
-			<div class="contents">
-				<h1 class="thema">商品編集</h1>
-				<form th:action="@{/shohinlist/list}" th:object="${editForm}" th:method="post">
-					<div class="form-group">
-						<label class="label">商品名</label> <input
-							type="text" th:field="*{shohin_name}" id="textbox" class="form-control">
-					</div>
-					<div class="form-group">
-						<label class="label1">商品コード</label><input type="text" th:field="*{shohin_code}" id="textbox"
-						class="form-control">
-					</div>
-					<div class="form-group">
-						<label class="label2">カテゴリ</label> <input
-							type="text" th:field="*{category}" id="textbox" class="form-control">
-					</div>
-					<div class="form-group">
-						<label class="label3">カラー</label> <input
-							type="text" th:field="*{color}" id="textbox" class="form-control">
-					</div>
-					<div class="form-group">
-						<label class="label4">値段<span class="text-box"></span></label> <input
-							type="text" th:field="*{price}" id="textbox" class="form-control">
-					</div>
-				</form>
-			</div>
-		<div align="right" class="footer">
 			<p>
-				<button type="submit" class="create-button2"
-					id="button2">登録</button>
+				<button type="button" onclick="history.back()"
+					class="create-button1" id="button1">戻る</button>
 			</p>
 		</div>
+	</div>
+	<div class="contents">
+		<h1 class="thema">商品編集</h1>
+		<form th:action="@{/update}" th:object="${editForm}"
+			th:method="post">
+			<div class="form-group">
+			<div class="error" th:errors="*{shohin_name}"></div>
+				<label class="label">商品名</label> <input type="text"
+					th:field="*{shohin_name}" id="textbox" class="form-control">
+			</div>
+			<div class="form-group">
+			<div class="error" th:errors="*{shohin_code}"></div>
+				<label class="label1">商品コード</label><input type="text"
+					th:field="*{shohin_code}" id="textbox" class="form-control">
+			</div>
+			<div class="form-group">
+			<div class="error" th:errors="*{category}"></div>
+				<label class="label2">カテゴリ</label> <input type="text"
+					th:field="*{category}" id="textbox" class="form-control">
+			</div>
+			<div class="form-group">
+			
+			<div class="error" th:errors="*{color}"></div>
+				<label class="label3">カラー</label> <input type="text"
+					th:field="*{color}" id="textbox" class="form-control">
+			</div>
+			<div class="form-group">
+			<div class="error" th:errors="*{price}"></div>
+				<label class="label4">値段<span class="text-box"></span></label> <input
+					type="text" th:field="*{price}" id="textbox" class="form-control">
+			</div>
+				<p>
+					<button type="submit" class="create-button2" id="button2">登録</button>
+				</p>
+			</div>
+		</form>
 </body>
 </html>

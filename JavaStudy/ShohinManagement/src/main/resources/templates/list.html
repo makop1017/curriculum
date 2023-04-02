@@ -15,9 +15,9 @@
 					class="create-button1" id="button1">戻る</button>
 			</p>
 		</div>
+		<h1 class="thema">商品一覧</h1>
 		<div class="container">
-			<h1 class="thema">商品一覧</h1>
-			<table class="table-striped">
+			<table class="table-striped" rules="all" style="border-collapse: collapse">
 				<thead>
 					<tr>
 						<th>商品名</th>
@@ -37,13 +37,13 @@
 						<td th:text="*{shohinlist.color}"></td>
 						<td th:text="${shohinlist.price}"></td>
 						<td>
-							<form th:action="@{/edit}" method="post">
+							<form th:action="@{/shohin/{shohin_code}/edit(shohin_code=*{shohinlist.shohin_code})}">
 								<input type="submit" name="edit" class="btn btn-secondary"
 									id="button2" value="編集">
 							</form>
 						</td>
 						<td>
-							<form th:action="@{/delete'/{shohin_code}(shohin_code=*{shohin_code})'}" method="post">
+							<form th:action="@{/shohin/{shohin_code}/delete(shohin_code=*{shohinlist.shohin_code})}">
 								<input type="submit" name="delete"
 									class="btn btn-secondary" id="button3" value="削除">
 							</form>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/ww.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>グッズ編集</title>
+<link rel="stylesheet" href="/css/edit1.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div align="left" class="header-in">
+				<p>
+					<button type="button" onclick="history.back()" class="button1"
+						id="button1">戻る</button>
+				</p>
+			</div>
+		</div>
+		<div class="contents">
+			<p>
+			<h1 class="title">編集</h1>
+			</p>
+			<form th:action="@{/update}" th:object="${editForm}" th:method="post">
+				<ul class="menu">
+					<div class="form-group">
+						<div class="error" th:errors="*{goods_id}"></div>
+						<label class="label1">No</label><input type="text"
+							th:field="*{goods_id}" id="textbox" class="form-control">
+					</div>
+					<div class="form-group">
+						<div class="error" th:errors="*{goods_name}"></div>
+						<label class="label2">グッズ</label> <input type="text"
+							th:field="*{goods_name}" id="textbox" class="form-control">
+					</div>
+					<div class="form-group">
+						<div class="error" th:errors="*{price}"></div>
+						<label class="label3">値段</label> <input type="text"
+							th:field="*{price}" id="textbox" class="form-control">
+					</div>
+					<div align="right" class="footer">
+						<p>
+							<button type="submit" class="button2" id="button2">登録</button>
+						</p>
+					</div>
+				</ul>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

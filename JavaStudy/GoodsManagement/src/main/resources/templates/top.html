@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/ww.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>トップページ</title>
+<link rel="stylesheet" href="/css/top1.css">
+</head>
+<body>
+	<div class="wrapper">
+		<p style="text-align: center">
+			<a th:href="@{/list}"> <input class="button1" id="button1"
+				value="グッズ一覧" type="button">
+			</a>
+		</p>
+		<p style="text-align: center">
+			<a th:href="@{/register}"> <input class="button2" id="button2"
+				value="登録" type="button">
+			</a>
+		</p>
+	</div>
+</body>
+</html>

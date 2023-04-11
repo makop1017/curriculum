@@ -1,0 +1,69 @@
+@media  screen and (min-width: 767px) {
+    body {
+        min-height: 100%;
+            height: 100%;
+            background-color:white;
+            color: Black;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .wrapper {
+            height: 540px;
+            width: 1470px;
+            margin: 0 auto;
+        }
+        .header {
+            height: 125px;
+            width: 1470px;
+        }
+        .title {
+            height: 80px;
+            width: 1000px;
+            color: Black;
+            background-color: #EEEEEE;
+            border:1px solid #AAAAAA;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: -10px;
+            margin-left: 230px;
+            margin-top: 30px;
+            font-size: 40px;
+        }
+        #button1 {
+            width: 130px;
+            height: 60px;
+            font-size: 30px;
+            color: Black;
+            background-color: white;
+            border:1px solid Black;
+            margin-top: 50px;
+            margin-left: 90px;
+        }
+        .center {
+            text-align:center;
+            height: 500px;
+            width: 1470px;
+        }
+        .table-striped  {
+			height: 200px;
+            width: 1150px;
+  			font-size     : 15pt;
+  			text-align    : center;
+  			color: black;
+  			line-height: 2.4;
+  			margin-top: 50px;
+  			margin-left: 170px;
+  		}
+       table,
+		table th,
+		table td {
+   		 	border: 1px solid black；
+		}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+}

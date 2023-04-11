@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/ww.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>グッズ一覧</title>
+<link rel="stylesheet" href="/css/list1.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<p>
+				<button type="button" onclick="history.back()" class="button1"
+					id="button1">戻る</button>
+			</p>
+		</div>
+		<h1 class="title">グッズ一覧</h1>
+		<div class="center-in">
+			<table class="table-striped" rules="all"
+				style="border-collapse: collapse">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>グッズ</th>
+						<th>値段</th>
+						<th>編集</th>
+						<th>削除</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="goodslist : ${goodslist}" class="table-content">
+						<td th:text="*{goodslist.goods_id}"></td>
+						<td th:text="*{goodslist.goods_name}"></td>
+						<td th:text="${goodslist.price}"></td>
+						<td>
+							<form
+								th:action="@{/goods/{goods_id}/edit(goods_ide=*{goodslist.goods_id})}">
+								<input type="submit" name="edit" class="btn btn-secondary"
+									id="button2" value="編集">
+							</form>
+						</td>
+						<td>
+							<form
+								th:action="@{/goods/{goods_id}/delete(goods_id=*{goodslist.goods_id})}">
+								<input type="submit" name="delete" class="btn btn-secondary"
+									id="button3" value="削除">
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

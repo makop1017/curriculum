@@ -61,7 +61,7 @@ public class RegisterController {
 		// ここで商品情報を登録する
 		// 登録処理は省略
 		// 商品情報の登録
-		registerService.insert(registerForm);
+		registerService.create(registerForm);
 		return "redirect:/list";
 	}
 

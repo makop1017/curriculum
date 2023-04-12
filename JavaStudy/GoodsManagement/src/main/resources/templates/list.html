@@ -35,7 +35,7 @@
 						<td th:text="${goodslist.price}"></td>
 						<td>
 							<form
-								th:action="@{/goods/{goods_id}/edit(goods_ide=*{goodslist.goods_id})}">
+								th:action="@{/goods/{goods_id}/edit(goods_id=*{goodslist.goods_id})}">
 								<input type="submit" name="edit" class="btn btn-secondary"
 									id="button2" value="編集">
 							</form>

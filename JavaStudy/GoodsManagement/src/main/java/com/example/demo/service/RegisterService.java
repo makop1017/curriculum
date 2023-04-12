@@ -24,9 +24,8 @@ public class RegisterService {
 	   * グッズ情報 新規登録
 	   * @param shohin グッズ情報
 	   */
-	  public void insert(RegisterForm registerForm) {
+	  public void create(RegisterForm registerForm) {
 		  RegisterEntity registerEntity = new RegisterEntity();
-		  registerEntity.setGoods_id(registerForm.getGoods_id());
 		  registerEntity.setGoods_name(registerForm.getGoods_name());
 		  registerEntity.setPrice(registerForm.getPrice());
 		  registerRepository.save(registerEntity);

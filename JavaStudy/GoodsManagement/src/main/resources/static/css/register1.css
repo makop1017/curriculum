@@ -4,6 +4,7 @@
             height: 100%;
             background-color:white;
             color: Black;
+            font-family: "Arial";
         }
         .clearfix::after {
             content: '';
@@ -44,6 +45,7 @@
             padding-top: 20px;
             padding-bottom: -10px;
             font-size: 40px;
+            font-family: "Arial";
         }
         .form-group {
             display: inline-block;
@@ -51,7 +53,7 @@
             line-height: 3;
             justify-content: flex-end;
             font-size: 30px;
-            color: #777777;
+            color: black;
             margin-top: 30px;
         }
         .text-box {
@@ -60,6 +62,7 @@
         #textbox {
             width: 800px;
             height: 60px;
+            color: black;
         }
         .label1 {
 			margin: -5px;
@@ -73,10 +76,6 @@
             height: 80px;
             width: 1000px;
         }
-        .footer {
-            height: 100px;
-            width: 1000px;
-        }
         #button2 {
             width: 130px;
             height: 60px;
@@ -85,11 +84,12 @@
             background-color: white;
             border:1px solid black;
             margin-right: -100px;
+            margin-top: 20px;
         }
         .error{
 			font-size: 15px;
 			color:red;
-			margin-left: -380px;
+			margin-left: 170px;
 			margin-bottom: -20px;
 		}
         * {

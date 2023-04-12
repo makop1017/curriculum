@@ -4,7 +4,7 @@
             height: 100%;
             background-color:white;
             color: Black;
-            font-family: "丸ゴシック体";
+            font-family: "Arial";
         }
         .clearfix::after {
             content: '';
@@ -36,37 +36,38 @@
             margin:  0 auto;
         }
         .title {
-            height: 100px;
+            height: 80px;
             width: 1000px;
             color: Black;
             background-color: #EEEEEE;
             border:1px solid #AAAAAA;
             text-align: center;
             padding-top: 20px;
-            padding-bottom: -10px;   
+            padding-bottom: -10px;
+            font-size: 40px;
+            font-family: "Arial";   
         }   
         .form-group {
             display: inline-block;
             width: 100%;
+           
             line-height: 3;
             justify-content: flex-end;
             font-size: 30px;
         }
          .form-control {
-            margin-top: 10px;
             margin-left: 30px;
             text-align :left;
         }
-        .label1 {
-			margin: -25px;
+        .label2 {
+			margin-left: 30px;
 		}
-		.label2 {
-			margin: -15px;
+		.label3 {
+			margin-left: 55px;
 		}
 		.textbox{
             height: 60px;
             width: 700px;
-            margin-top: 20px;
         }
         #textbox{
             height: 60px;
@@ -76,7 +77,6 @@
         .footer {
             height: 80px;
             width: 1000px;
-            margin-top: 100px;
         }
         #button2 {
             width: 130px;
@@ -86,11 +86,12 @@
             background-color: white;
             border:1px solid black;
             margin-right: -80px;
+            margin-top: 50px;
         }
         .error{
 			font-size: 15px;
 			color:red;
-			margin-left: -380px;
+			margin-left: 170px;
 			margin-bottom: -20px;
 		}
         * {
